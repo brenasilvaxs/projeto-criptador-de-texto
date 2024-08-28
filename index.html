@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="shortcut icon" href="./imagens/cadeado.png" type="image/x-icon">
+</head>
+<body>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="./video/video.mp4" type="video/mp4">
+    </video>
+    
+    <main class="main container">
+        <header class="cabecalho"> 
+            <div class="imagem-circular">
+                <img src="./imagens/logo.png" alt="Logo Alura">
+            </div>
+            <h1 class="titulo">DECODIFICADOR DE TEXTO</h1>
+        </header>
+
+    <div class="container-input">
+        <div class="input">
+            <textarea id="input-texto" placeholder="Digite o seu texto aqui..."></textarea>
+            <p class="atencao"><strong>ATENÇÃO:</strong> APENAS LETRAS MINUSCULAS SEM ACENTO E SEM CARACTERES ESPECIAIS</p>
+        </div>
+    
+    <div id="output">
+        <img class="cadeado" src="./imagens/cadeado.png" alt="Cadeado">
+        <h2>Sua mensagem aparecerá aqui!</h2>
+        <span>Digite o texto que deseja criptografar ou descriptografar.</span>
+    </div>
+    </div>
+
+    <div class="buttons">
+        <div class="container-button">
+            <button onclick="criptografar()" class="button-criptografar">CRIPTOGRAFAR</button>
+            <button onclick="descriptografar()" class="button-descriptografar">DESCRIPTOGRAFAR</button>
+        </div>
+    </div>
+    </main>
+
+    <footer class="rodape">
+        <h3>Desenvolvido por Brena Silva Monteiro</h3>
+    </footer>
+
+    <script src="./interacao/script.js" ></script>
+</body>
+</html>
